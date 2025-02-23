@@ -1,0 +1,14 @@
+<section class=" flex flex-col gap-4 w-full h-auto mb-4">
+    <mat-divider class="opacity-50"  /> 
+   
+        
+        <div class="flex flex-wrap justify-center items-center px-2 gap-4 mt-4">
+      
+            @for(category of categories(); track category.id) {
+                <span class="opacity-80 hover:opacity-100 cursor-pointer  select-none font-semibold flex  border-radius-full items-center justify-center {{CATEGORY_COLORS_BACKGROUND[category.color]}} px-4 py-2 rounded-2xl w-[80px]  text-center text-white">
+                    {{category.name}}
+                </span>
+            }
+        
+        </div>
+</section>
